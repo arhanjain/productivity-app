@@ -8,30 +8,34 @@ function Login({ onLoggedIn }) {
   return (
     <div className="page">
       <div className="container">
-        <div className="container-tab">Kanji</div>
+        <div className="container-tab">
+          <div className="logo">早く</div>
+          {/* <div className="appName">Hayaku</div> */}
+        </div>
         <div className="container-box">
           <input
             name="username"
             type="text"
+            placeholder="Username"
             value={username}
             onChange={(text) => setUsername(text.target.value)}
           />
           <input
             name="password"
-            type="text"
+            type="password"
+            placeholder="Password"
             value={password}
             onChange={(text) => setPassword(text.target.value)}
           />
           <button
+            className="login"
             onClick={() => {
               onLoggedIn(true);
             }}
           >
             Login
           </button>
-          <button>
-            Create Account
-          </button>
+          <button className="createAccount">Create Account</button>
         </div>
       </div>
     </div>
