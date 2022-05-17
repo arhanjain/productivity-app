@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.page {
+.login {
   width: 100%;
   min-height: 100vh;
 
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.container {
+.login > .container {
   width: 70%;
   display: flex;
   justify-content: center;
@@ -26,10 +26,10 @@
   flex-direction: column;
 }
 
-.container-tab {
+.login > .container > .tab {
   width: 40%;
   background: #f5f5f5;
-  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  border-radius: 1.1rem 1.1rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,17 +41,18 @@
   padding-right: 1rem;
 }
 
-.logo {
-  font-family: 'Rampart One', cursive;
+.login > .container > .tab > .logo {
+  font-family: "Rampart One", cursive;
   font-size: 2rem;
 }
 
-.appName {
-  font-family: 'Rampart One', cursive;
+.login > .container > .tab > .appName {
+  font-family: "Rampart One", cursive;
   font-size: 1rem;
+  /* letter-spacing: 0.2rem; */
 }
 
-.container-box {
+.login > .container > .box {
   width: 100%;
   background: #f5f5f5;
   border-radius: 1.1rem;
@@ -63,7 +64,7 @@
   padding-bottom: 1.5rem;
 }
 
-input {
+.login > .container > .box > input {
   width: 75%;
   height: 2.5rem;
   border: none;
@@ -72,9 +73,29 @@ input {
   background: #ffffff;
   box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
   border-radius: 0.7rem;
+
+  padding-left: 0.8rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
-.login {
+.login > .container > .box > input::-webkit-input-placeholder {
+  color: #c4c4c4;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.login > .container > .box > input:focus {
+  /* outline: black; */
+  border: gray;
+}
+
+.login > .container > .box > .loginButton {
   width: 38%;
   height: 2rem;
   background: linear-gradient(
@@ -94,7 +115,7 @@ input {
   font-size: 1rem;
 }
 
-.createAccount {
+.login > .container > .box > .createAccountButton {
   width: 38%;
   height: 1.5;
   background: none;

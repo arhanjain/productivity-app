@@ -1,2 +1,12 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Rampart+One&display=swap');
+
+:root {
+  --primary: #5FD8FF;
+  --primary-light: #33E6F4;
+  --primary-dark: #33ccff;
+  --alt-green: #BBFC8E;
+  --alt-seagrean: #7EF9B5;
+  --alt-teal: #46F2DA;
+  /* --alt-magenta: #A4326A; */
+}
