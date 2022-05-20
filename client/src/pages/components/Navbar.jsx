@@ -1,12 +1,23 @@
 import React from "react";
-import {Link, useNavigate} from 'react-router-dom'
-import { Dashboard, CalendarMonth, Analytics, AccountCircle} from "@mui/icons-material";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  Dashboard,
+  CalendarMonth,
+  Analytics,
+  AccountCircle,
+} from "@mui/icons-material";
+import { motion } from "framer-motion";
 import "./Navbar.css";
 
-function Navbar() {
-  const navigate = useNavigate()
+function Navbar({variants}) {
+  const navigate = useNavigate();
+  
+
   return (
-    <div className="navbar">
+    <motion.div className="navbar"
+    variants={variants}
+    initial="hidden"
+    animate="show">
       <div className="tab" onClick={() => navigate("/dashboard")}>
         <Dashboard className="dashboardIcon" />
       </div>
@@ -17,9 +28,9 @@ function Navbar() {
         <Analytics className="analyticsIcon" />
       </div>
       <div className="tab" onClick={() => navigate("/profile")}>
-        <AccountCircle className='profileIcon'/>
+        <AccountCircle className="profileIcon" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

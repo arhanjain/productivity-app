@@ -1,12 +1,14 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import './Title.css'
 
-function Title() {
+function Title({variants}) {
   return (
-    <div className="title">
+    <motion.div className="title" variants={variants} 
+    initial="hidden"
+    animate="show">
       <div className="logo">速い</div>
-      {/* <div className="appName">Hayai</div> */}
-    </div>
+    </motion.div>
   )
 }
 

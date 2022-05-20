@@ -1,0 +1,55 @@
+.topBar {
+  width: 100%;
+  height: 10vh;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.topBar > .welcome {
+  height: 100%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.topBar > .welcome > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  font-family: "Poppins";
+}
+
+.topBar > .welcome > .greeting {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.topBar > .welcome > .returnMessage {
+
+}
+
+.topBar > .welcome > .emoji {
+  height: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.topBar > .addEvent {
+  width: 12vw;
+  height: 6vh;
+  background-color: aqua;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 0rem 0rem 1rem;
+}

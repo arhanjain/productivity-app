@@ -10,3 +10,8 @@
   --alt-teal: #46F2DA;
   /* --alt-magenta: #A4326A; */
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
