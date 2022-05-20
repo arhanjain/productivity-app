@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import "./Dashboard.css";
 import TopBar from "./components/TopBar";
+import Card from "./components/Card";
 
 function Dashboard() {
   const sidebarVariants = {
@@ -24,11 +25,17 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="sidebar">
-        <Title variants={sidebarVariants}/>
-        <Navbar variants={sidebarVariants}/>
+        <Title variants={sidebarVariants} />
+        <Navbar variants={sidebarVariants} />
       </div>
       <div className="content">
-        <TopBar/>
+        <TopBar />
+        <div className="cards">
+          <Card width="36vw" height="30vh" />
+          <Card width="18vw" height="30vh" />
+          <Card width="18vw" height="70vh" />
+          {/* <Card width="20vw" height="30vh"/> */}
+        </div>
       </div>
     </div>
   );
